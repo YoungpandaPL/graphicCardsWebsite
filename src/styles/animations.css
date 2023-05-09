@@ -1,0 +1,29 @@
+@keyframes cursor {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes typing {
+  0% {
+    border-right: 3px solid rgb(0, 136, 255);
+  }
+  50% {
+    border-right-color: transparent;
+  }
+  100% {
+    border-right: 3px solid rgb(0, 136, 255);
+  }
+}
+
+@keyframes graphic-card1 {
+  from {
+    bottom: -40rem;
+  }
+  to {
+    bottom: 15rem;
+  }
+}

@@ -1,0 +1,98 @@
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 40%;
+}
+
+.image img {
+  width: 50%;
+  user-select: none;
+}
+
+.graphic-card-build span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.graphic-card-build span::before {
+  background-color: white;
+  color: rgb(0, 136, 255);
+  position: absolute;
+  text-align: center;
+  font-size: 17px;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 15px;
+  padding: 5px 10px;
+  top: -80px;
+  width: 350px;
+  height: 60px;
+}
+
+.graphic-card-build span:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.graphic-card-build span:nth-child(2) {
+  top: 49%;
+  left: 44.7%;
+}
+
+.graphic-card-build span:nth-child(2)::before {
+  content: "Procesor graficzny - odpowiedzialny za generowanie grafiki.";
+}
+
+.graphic-card-build span:nth-child(3) {
+  top: 87%;
+  left: 44.7%;
+}
+
+.graphic-card-build span:nth-child(3)::before {
+  content: "Złącze I/O - przesył danych w karcie graficznej.";
+}
+
+.graphic-card-build span:nth-child(4) {
+  top: 42%;
+  left: 26%;
+}
+
+.graphic-card-build span:nth-child(4)::before {
+  content: "Złącza karty graficznej - połączenia z urządzeniami zewnętrznymi.";
+}
+
+.graphic-card-build span:nth-child(5) {
+  top: 16%;
+  left: 44.7%;
+}
+
+.graphic-card-build span:nth-child(5)::before {
+  content: "Pamięć VRAM - pamięć dla karty graficznej.";
+}
+
+.graphic-card-build span:nth-child(6) {
+  top: 45%;
+  left: 56.5%;
+}
+
+.graphic-card-build span:nth-child(6)::before {
+  content: "Wielofazowy moduł zasilania korzystający z tranzystorów MOSFET.";
+}
+
+.graphic-card-build span:nth-child(7) {
+  top: 10%;
+  left: 70%;
+}
+
+.graphic-card-build span:nth-child(7)::before {
+  content: "Złącze zasilania - zasilanie karty graficznej.";
+}

@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: none;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(102, 102, 102);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(202, 202, 202);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(175, 175, 175);
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+body {
+  height: 600vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/src/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 150px;
+}
+
+h1 {
+  color: white;
+}
+
+.subtitle {
+  width: 100%;
+}
+
+span {
+  color: rgb(74, 170, 254);
+}
+
+header .content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+header .content button,
+.definition button,
+.graphic-card-build button,
+.producers .next-producer,
+.producers .previous-producer,
+.producers .next,
+.previous-action,
+.next-action,
+.buttons #next {
+  padding: 20px 10px;
+  width: 300px;
+  font-size: 30px;
+  background-color: transparent;
+  border: 2px solid rgb(0, 136, 255);
+  color: white;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 50px;
+  transition: box-shadow 0.5s, background-color 0.5s, text-shadow 0.5s;
+}
+
+header .content button:hover,
+.definition button:hover,
+.graphic-card-build button:hover,
+.producers .next-producer:hover,
+.producers .previous-producer:hover,
+.producers .next:hover,
+.previous-action:hover,
+.next-action:hover,
+.buttons #next:hover {
+  text-shadow: 0 0 30px rgba(255, 255, 255, 1);
+  background-color: rgb(0, 136, 255);
+  box-shadow: 0 0 100px 20px rgb(0, 136, 255);
+}
+
+header img {
+  scale: 2;
+  rotate: 100deg;
+  position: absolute;
+  bottom: 0rem;
+  right: -10rem;
+  rotate: 70deg;
+  transition: bottom 0.5s, right 0.5s, scale 0.5s;
+}
+
+header img:hover {
+  right: 0rem;
+  bottom: 10rem;
+  scale: 2.5;
+}
+
+#progress-bar {
+  height: 20px;
+  width: 0px;
+  position: fixed;
+  background-color: rgb(74, 170, 254);
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.cursor {
+  scale: 1.5;
+  top: 50px;
+  left: 50px;
+  color: rgb(173, 173, 173);
+  position: fixed;
+  z-index: 999;
+  transform: rotate(0deg);
+  pointer-events: none;
+  animation: cursor 0.5s linear infinite;
+  transform-origin: center;
+}
+
+.definition {
+  display: flex;
+  padding: 100px;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(20, 20, 20);
+  overflow: hidden;
+}
+
+.definition h2 {
+  color: rgb(0, 136, 255);
+  width: 60%;
+}
+
+#definition-image {
+  scale: 2;
+  rotate: 90deg;
+  position: absolute;
+  bottom: -40rem;
+  right: 0;
+  pointer-events: none;
+}
+
+#definiton-description {
+  color: white;
+  font-size: 40px;
+  margin-top: 40px;
+  width: 80rem;
+}
+
+.definition #next {
+  position: absolute;
+  bottom: 10%;
+}
+
+.graphic-card-build {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+  position: relative;
+}
+
+.graphic-card-build .title {
+  color: white;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 100px;
+  width: 100rem;
+}
+
+.graphic-card-build button {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+
+.producers {
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.producers .images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.producers .description {
+  width: 90%;
+  color: white;
+  font-size: 35px;
+}
+
+.producers .graphic-card {
+  position: absolute;
+  rotate: 180deg;
+  right: -100px;
+  scale: 2.3;
+  bottom: 13.5%;
+}
+
+.producers img {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.producers .content {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.content h2,
+.action h2 {
+  color: white;
+  font-size: 80px;
+}
+
+.action {
+  height: 100vh;
+  background-color: rgb(20, 20, 20);
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+}
+
+.action .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.action .background {
+  object-fit: cover;
+  width: 30%;
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  border-radius: 50px;
+  border: 3px solid white;
+}
+
+.action .description {
+  color: white;
+  font-size: 33px;
+  width: 600px;
+  margin-top: 30px;
+}
+
+.action .buttons {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+}
+
+.action .action-graphic-card {
+  position: absolute;
+  bottom: -50px;
+  right: -300px;
+  scale: 2;
+  transition: bottom 0.5s, right 0.5s, scale 0.5s;
+}
+
+.action .action-graphic-card:hover {
+  bottom: 20px;
+  right: -100px;
+  scale: 2.4;
+}
+
+/* .action img {
+  position: absolute;
+  bottom: -50px;
+  right: -300px;
+  scale: 2.1;
+  rotate: 90deg;
+  transition: scale 0.5s, right 0.5s, bottom 0.5s;
+}
+
+.action img:hover {
+  bottom: 0;
+  right: 0;
+  scale: 2.5;
+} */
