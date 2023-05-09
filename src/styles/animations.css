@@ -27,3 +27,12 @@
     bottom: 15rem;
   }
 }
+
+@keyframes graphic-card2 {
+  from {
+    bottom: -55%;
+  }
+  to {
+    bottom: 10%;
+  }
+}

@@ -24,4 +24,33 @@ export const textsObject = {
     "<span>Deferred shading: </span>technika shadingu stosowana w grafice 3D, która pozwala na bardziej wydajne renderowanie scen z wieloma światłami. W technice deferred shading, po renderowaniu geometrii na ekranie, obliczane są tzw. bufory pozycji, normalnych, kolorów oraz światła.",
   antiAliasing:
     "<span>Anti-aliasing: </span>anti-aliasing polega na dodawaniu dodatkowych pikseli na granicy między obiektami, aby zmiękczyć krawędzie i uzyskać bardziej naturalny wygląd obrazu. W efekcie, linie stają się mniej zębate i bardziej gładkie. Istnieje kilka rodzajów anti-aliasingu takie jak: <span>Multisampling, Supersampling, FXAA, SMAA.</span>",
+  computerGames:
+    "<span>Gry komputerowe: </span>Karty graficzne są niezbędne do wyświetlania grafiki w grach komputerowych. Dzięki nim możemy cieszyć się realistycznymi obrazami, płynnymi animacjami i efektami wizualnymi.",
+  videoRendering:
+    "<span>Przetwarzanie wideo: </span>Karty graficzne pozwalają na przyspieszenie procesu edycji i renderowania wideo. Są one wykorzystywane w programach do edycji wideo i efektów specjalnych.",
+  design3D:
+    "<span>Projektowanie 3D: </span>Karty graficzne pozwalają na szybkie i płynne wyświetlanie i edycję obiektów w przestrzeni 3D. Są one wykorzystywane w programach do projektowania i animacji 3D.",
+  cryptocurrencies:
+    "<span>Kryptowaluty: </span>Karty graficzne są wykorzystywane do wydobywania kryptowalut, takich jak Bitcoin czy Ethereum. Są one potrzebne do rozwiązywania skomplikowanych obliczeń, które umożliwiają uzyskanie nagrody w postaci kryptowalut.",
+  CUDA: "<span>CUDA: </span>to architektura kart graficznych firmy Nvidia, która jest wykorzystywana w kartach graficznych przeznaczonych do zastosowań naukowych i obliczeń równoległych. Architektura ta została zaprojektowana z myślą o przetwarzaniu równoległym i oferuje dużą liczbę rdzeni CUDA, które zapewniają bardzo dużą moc obliczeniową. Dzięki temu karty graficzne oparte na tej architekturze są idealne do obliczeń związanych z sztuczną inteligencją, uczeniem maszynowym, renderowaniem grafiki, itp.",
+  AMDRDNA:
+    "<span>AMD RDNA: </span>to architektura kart graficznych firmy AMD, która została zaprojektowana z myślą o wysokiej wydajności i efektywności energetycznej. Architektura RDNA wprowadziła wiele innowacji w porównaniu z poprzednimi architekturami AMD, takie jak przyspieszenie sprzętowe dla technologii ray tracing oraz optymalizacje pozwalające na uzyskanie wyższej wydajności w grach.",
+  IntelXE:
+    "<span>Intel Xe: </span>to architektura kart graficznych opracowana przez firmę Intel. Została ona zaprojektowana z myślą o zintegrowanych układach graficznych, takich jak te stosowane w laptopach, ale także dla dedykowanych kart graficznych. Architektura Xe jest oparta na rdzeniach graficznych Intel Gen11 i Gen12 i ma na celu poprawę wydajności graficznej w porównaniu z poprzednimi generacjami zintegrowanych kart graficznych.",
+  ARMMali:
+    "<span>ARM Mali: </span>to architektura kart graficznych stosowana w urządzeniach mobilnych, takich jak smartfony i tablety. Architektura ta zapewnia wysoką wydajność graficzną w urządzeniach mobilnych, przy jednoczesnym niskim zużyciu energii. Karty graficzne oparte na architekturze Mali są zdolne do wyświetlania grafiki w wysokiej rozdzielczości oraz do uruchamiania gier i innych wymagających aplikacji.",
+  AppleM1:
+    "<span>Apple M1: </span>to architektura kart graficznych opracowana przez firmę Apple, która jest wykorzystywana w procesorach M1 używanych w komputerach Mac. Architektura ta jest oparta na rdzeniach graficznych firmy Apple i została zaprojektowana z myślą o zapewnieniu wysokiej wydajności graficznej i efektywności energetycznej. Oficjalnie Apple nie ujawniło szczegółów na temat tej architektury, ale podobno wykorzystuje ona wiele elementów architektury CUDA, co pozwala na wykonywanie zadań związanych z nauką, sztuczną inteligencją i obliczeniami równoległymi.",
+  cores:
+    "<span>Rdzenie: </span>Rdzenie to jednostki przetwarzające dane na karcie graficznej. Im więcej rdzeni, tym więcej obliczeń może być wykonywanych jednocześnie, co zwiększa wydajność. Współczesne karty graficzne mają od kilkuset do kilku tysięcy rdzeni.",
+  timing:
+    "<span>Taktowanie: </span>Taktowanie to prędkość z jaką procesory karty graficznej przetwarzają dane. Wyższe taktowanie oznacza szybsze przetwarzanie danych, ale również wyższe zużycie energii. Wartość taktowania jest wyrażona w MHz lub GHz.",
+  memoryParametr:
+    "<span>Pamięć: </span>Karta graficzna potrzebuje pamięci do przechowywania informacji o wyświetlanych obrazach. Im więcej pamięci, tym więcej informacji może być przechowywanych i szybciej przetwarzanych. Najnowsze karty graficzne posiadają od kilku do kilkunastu gigabajtów pamięci VRAM.",
+  capacity:
+    "<span>Przepustowość: </span>Przepustowość to ilość danych, które karta graficzna może przetworzyć w ciągu sekundy. Im wyższa przepustowość, tym szybsze przesyłanie danych i wyższa wydajność. Przepustowość jest wyrażana w GB/s.",
+  interface:
+    "<span>Interfejs: </span>Interfejs to sposób, w jaki karta graficzna komunikuje się z procesorem i pamięcią RAM. Najnowsze interfejsy, takie jak PCIe 4.0, pozwalają na szybszą transmisję danych. Starsze karty graficzne mogą mieć interfejsy PCI lub AGP.",
+  technology:
+    "<span>Wsparcie dla technologii: </span>Karty graficzne obsługują różne technologie, takie jak DirectX, OpenGL, Vulkan, CUDA, itp. Obsługa tych technologii wpływa na wydajność i jakość wyświetlanych obrazów. Na przykład, karty obsługujące technologię CUDA mogą być wykorzystywane do przyspieszania obliczeń naukowych i zastosowań związanych z uczeniem maszynowym.",
 };

@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  cursor: pointer;
+  cursor: none;
 }
 
 ::-webkit-scrollbar {
@@ -24,7 +24,7 @@
 }
 
 body {
-  height: 600vh;
+  height: 900vh;
 }
 
 header {
@@ -49,6 +49,7 @@ h1 {
 
 span {
   color: rgb(74, 170, 254);
+  font-weight: bold;
 }
 
 header .content {
@@ -65,7 +66,11 @@ header .content button,
 .producers .buttons button,
 .action .buttons button,
 .producers .buttons button,
-.algorithm .buttons button {
+.algorithm .buttons button,
+.usage .buttons button,
+.integrated button,
+.parameters button,
+.architecture .buttons button {
   padding: 20px 10px;
   width: 300px;
   font-size: 30px;
@@ -86,7 +91,11 @@ header .content button:hover,
 .producers .buttons button:hover,
 .producers .buttons button:hover,
 .action .buttons button:hover,
-.algorithm .buttons button:hover {
+.algorithm .buttons button:hover,
+.usage .buttons button:hover,
+.integrated button:hover,
+.parameters button:hover,
+.architecture .buttons button:hover {
   text-shadow: 0 0 30px rgba(255, 255, 255, 1);
   background-color: rgb(0, 136, 255);
   box-shadow: 0 0 100px 20px rgb(0, 136, 255);
@@ -243,7 +252,8 @@ header img:hover {
 }
 
 .content h2,
-.action h2 {
+.action h2,
+.usage .content h2 {
   color: white;
   font-size: 80px;
 }
@@ -339,4 +349,138 @@ header img:hover {
   height: 700px;
   object-fit: cover;
   border: 3px solid white;
+}
+
+.usage {
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 100px;
+}
+
+.usage .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.usage .content .description {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.usage .content .buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.parameters {
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  padding: 100px;
+  align-items: center;
+  gap: 50px;
+}
+
+.parameters .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.dropdown {
+  background-color: rgb(47, 45, 55);
+  width: 300px;
+}
+
+.dropdown .selected {
+  background-color: rgb(34, 33, 39);
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 10px 20px;
+  user-select: none;
+}
+
+.dropdown .selected:hover {
+  background-color: rgb(30, 29, 33);
+}
+
+.dropdown ul {
+  list-style: none;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  display: none;
+  user-select: none;
+}
+
+.dropdown p {
+  padding: 5px 10px;
+}
+
+.dropdown p:hover {
+  background-color: rgb(34, 33, 39);
+}
+
+.parameters .description {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+
+.parameters button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.architecture {
+  height: 100vh;
+  background-color: rgb(20, 20, 20);
+  padding: 100px;
+  position: relative;
+}
+
+.architecture .buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  bottom: 7%;
+  left: 3%;
+}
+
+.architecture .content {
+  width: 50%;
+}
+
+.architecture .description {
+  color: white;
+  font-size: 30px;
+}
+
+.architecture .title {
+  font-size: 80px;
+  color: white;
 }
