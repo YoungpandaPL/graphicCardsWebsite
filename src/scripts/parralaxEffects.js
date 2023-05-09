@@ -3,15 +3,21 @@ let definitionImage = document.querySelector("#definition-image");
 let definitonDescription = document.querySelector("#definiton-description");
 let buildTitle = document.querySelector(".graphic-card-build .title");
 let actionTitle = document.querySelector(".action .title");
-let actionDescription = document.querySelector(".action .description");
+let algorithmTitle = document.querySelector(".algorithm .content .title");
+let producersTitle = document.querySelector(".producers .content .title");
 
 import * as texts from "./texts.js";
 
 document.addEventListener("scroll", () => {
   let scrollY = window.scrollY;
   if (scrollY >= 40) {
-    typingEffect(definitonTitle, "Co to są karty graficzne?", 75, 0);
-    typingEffect(definitonDescription, texts.textsObject.graphicCardDefinition, 30, 1500);
+    typingEffect(definitonTitle, "Co to są karty graficzne?", 50, 0);
+    typingEffect(
+      definitonDescription,
+      texts.textsObject.graphicCardDefinition,
+      30,
+      1500
+    );
   }
 
   setTimeout(() => {
@@ -20,9 +26,20 @@ document.addEventListener("scroll", () => {
   }, 1000);
 
   if (scrollY >= 1400) {
-    typingEffect(buildTitle, "Co znajdziemy w środku karty graficznej?", 75, 0);
+    typingEffect(buildTitle, "Co znajdziemy w środku karty graficznej?", 50, 0);
+  }
+  if (scrollY >= 2768) {
+    typingEffect(producersTitle, "Producenci kart graficznych", 50, 0);
   }
   if (scrollY >= 4165) {
-    typingEffect(actionTitle, "Jak działają karty graficzne?", 75, 0);
+    typingEffect(actionTitle, "Jak działają karty graficzne?", 50, 0);
+  }
+  if (scrollY >= 5260) {
+    typingEffect(
+      algorithmTitle,
+      "Trochę o algorytmach kart graficznych",
+      50,
+      0
+    );
   }
 });

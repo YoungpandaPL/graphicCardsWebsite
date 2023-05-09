@@ -8,32 +8,41 @@
     <link rel="stylesheet" href="/src/styles/style.css" type="text/css" />
     <link rel="stylesheet" href="src/styles/animations.css" type="text/css" />
     <link rel="stylesheet" href="src/styles/build.css" type="text/css" />
-    <script src="https://kit.fontawesome.com/aecae4bf2b.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/aecae4bf2b.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
     <i class="fa-sharp fa-solid fa-fan cursor"></i>
     <header>
-      <h1 style="font-size: 170px">Trochę o <span>kartach graficznych</span></h1>
+      <h1 style="font-size: 170px">
+        Trochę o <span>kartach graficznych</span>
+      </h1>
       <div class="content">
         <h2 style="font-size: 50px; color: white" class="subtitle">
           Strona internetowa przygotowana przez <span id="author"></span>
         </h2>
         <button id="next">Przejdź dalej</button>
       </div>
-      <img src="src/images/graphic-card-1.png" />
+      <img src="src/images/graphic-card-1.png" alt="graphic-card" />
     </header>
     <main>
       <section class="definition">
         <h2 id="definition-title" style="color: white; font-size: 100px"></h2>
         <p id="definiton-description"></p>
-        <img src="src/images/graphic-card-1.png" id="definition-image" />
+        <img
+          src="src/images/graphic-card-1.png"
+          id="definition-image"
+          alt="graphic-card"
+        />
         <button id="next">Przejdź dalej</button>
       </section>
       <section class="graphic-card-build">
         <h2 class="title"></h2>
         <div class="image">
-          <img src="src/images/graphic-card-4.png" />
+          <img src="src/images/graphic-card-4.png" alt="graphic-card" />
           <span>1</span>
           <span>2</span>
           <span>3</span>
@@ -45,43 +54,93 @@
       </section>
       <section class="producers">
         <div class="content">
-          <h2>Producenci kart graficznych</h2>
+          <h2 class="title"></h2>
           <p class="description">
-            <span>Nvidia:</span> Nvidia Corporation to amerykańska firma z siedzibą w Santa Clara, w Kalifornii. Nvidia
-            produkuje karty graficzne GeForce, które są używane w komputerach osobistych oraz w innych urządzeniach,
-            takich jak konsole do gier i urządzenia mobilne. Karty graficzne Nvidia są znane ze swojej wydajności, a
-            także z technologii Nvidia G-Sync, która synchronizuje odświeżanie ekranu z wyjściem karty graficznej dla
-            płynniejszej i bardziej stabilnej rozgrywki. Nvidia produkuje również karty graficzne Quadro, które są
-            przeznaczone do zastosowań profesjonalnych, takich jak projektowanie 3D i animacja.
+            <span>Nvidia:</span> Nvidia Corporation to amerykańska firma z
+            siedzibą w Santa Clara, w Kalifornii. Nvidia produkuje karty
+            graficzne GeForce, które są używane w komputerach osobistych oraz w
+            innych urządzeniach, takich jak konsole do gier i urządzenia
+            mobilne. Karty graficzne Nvidia są znane ze swojej wydajności, a
+            także z technologii Nvidia G-Sync, która synchronizuje odświeżanie
+            ekranu z wyjściem karty graficznej dla płynniejszej i bardziej
+            stabilnej rozgrywki. Nvidia produkuje również karty graficzne
+            Quadro, które są przeznaczone do zastosowań profesjonalnych, takich
+            jak projektowanie 3D i animacja.
           </p>
           <div class="buttons">
-            <button class="next-producer" style="height: 100px; width: 400px">Następny producent</button>
-            <button class="previous-producer" style="height: 100px; width: 400px">Poprzedni producent</button>
+            <button class="next-producer" style="height: 100px; width: 400px">
+              Następny producent
+            </button>
+            <button
+              class="previous-producer"
+              style="height: 100px; width: 400px"
+            >
+              Poprzedni producent
+            </button>
             <button class="next" id="next">Przejdź dalej</button>
           </div>
         </div>
         <div class="images">
-          <img src="src/images/nvidia-headquarters.jpg" id="headquarter1" />
-          <img src="src/images/nvidia-headquarters-2.jpg" id="headquarter2" />
+          <img
+            src="src/images/nvidia-headquarters.jpg"
+            id="headquarter1"
+            alt="headquarter"
+          />
+          <img
+            src="src/images/nvidia-headquarters-2.jpg"
+            id="headquarter2"
+            alt="headquarter2"
+          />
         </div>
       </section>
       <section class="action">
         <div class="content">
           <h2 class="title"></h2>
           <p class="description">
-            Przetwarzanie grafiki: Karta graficzna zawiera specjalny procesor graficzny (GPU), który jest dedykowany do
-            przetwarzania danych graficznych. GPU posiada tysiące małych rdzeni, które są zoptymalizowane do
-            przetwarzania dużej ilości danych równocześnie. Wiele z tych rdzeni pracuje równolegle, co przyspiesza
-            przetwarzanie danych graficznych.
+            Przetwarzanie grafiki: Karta graficzna zawiera specjalny procesor
+            graficzny (GPU), który jest dedykowany do przetwarzania danych
+            graficznych. GPU posiada tysiące małych rdzeni, które są
+            zoptymalizowane do przetwarzania dużej ilości danych równocześnie.
+            Wiele z tych rdzeni pracuje równolegle, co przyspiesza przetwarzanie
+            danych graficznych.
           </p>
           <div class="buttons">
-            <button class="previous-action" id="previous-action">Poprzednie</button>
+            <button class="previous-action" id="previous-action">
+              Poprzednie
+            </button>
             <button class="next-action" id="next-action">Następne</button>
             <button id="next">Przejdź dalej</button>
           </div>
         </div>
-        <img class="background" src="src/images/background-2.jpg" />
-        <img class="action-graphic-card" src="src/images/graphic-card-1.png" class="action-graphic-card" />
+        <img
+          class="background"
+          src="src/images/background-2.jpg"
+          alt="background"
+        />
+        <img
+          class="action-graphic-card"
+          src="src/images/graphic-card-1.png"
+          class="action-graphic-card"
+          alt="graphic-card"
+        />
+      </section>
+      <section class="algorithm">
+        <div class="content">
+          <h2 class="title"></h2>
+          <p class="description">
+            <span>Raytracing: </span>jest to bardziej zaawansowany algorytm,
+            który pozwala na generowanie bardziej realistycznych obrazów.
+            Algorytm ten symuluje sposób, w jaki światło odbija się i przechodzi
+            przez obiekty, co pozwala na generowanie bardziej realistycznych
+            cieni, refleksów i innych efektów świetlnych.
+          </p>
+          <div class="buttons">
+            <button id="previous-algorithm">Poprzedni</button>
+            <button id="next-algorithm">Następny</button>
+            <button id="next">Przejdź dalej</button>
+          </div>
+        </div>
+        <img src="src/images/raytracing.png" alt="raytracing" />
       </section>
     </main>
     <div id="progress-bar"></div>

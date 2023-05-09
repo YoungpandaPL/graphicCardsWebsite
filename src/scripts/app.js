@@ -9,11 +9,18 @@ let progressBar = document.querySelector("#progress-bar");
 let nextAction = document.querySelector("#next-action");
 let previousAction = document.querySelector("#previous-action");
 let actionDescription = document.querySelector(".action .content .description");
+let nextAlgorithm = document.querySelector("#next-algorithm");
+let previousAlgorithm = document.querySelector("#previous-algorithm");
+let algorithmDescrtiption = document.querySelector(
+  ".algorithm .content .description"
+);
+let algorithmImage = document.querySelector(".algorithm img");
 
 import * as texts from "./texts.js";
 
 let producer = 0;
 let action = 0;
+let algorithm = 0;
 
 nextButton.forEach((button) => {
   button.addEventListener("click", () => {
@@ -95,9 +102,53 @@ previousAction.addEventListener("click", () => {
   }
 });
 
+nextAlgorithm.addEventListener("click", () => {
+  switch (algorithm) {
+    case 0:
+      algorithm = 1;
+      algorithmDescrtiption.innerHTML = texts.textsObject.resterization;
+      algorithmImage.setAttribute("src", "/src/img/resterization.png");
+      break;
+    case 1:
+      algorithm = 2;
+      algorithmDescrtiption.innerHTML = texts.textsObject.mapping;
+      break;
+    case 2:
+      algorithm = 3;
+      algorithmDescrtiption.innerHTML = texts.textsObject.defferedShading;
+      break;
+    case 3:
+      algorithm = 4;
+      algorithmDescrtiption.innerHTML = texts.textsObject.antiAliasing;
+      break;
+  }
+});
+
+previousAlgorithm.addEventListener("click", () => {
+  switch (algorithm) {
+    case 4:
+      algorithm = 3;
+      algorithmDescrtiption.innerHTML = texts.textsObject.defferedShading;
+      break;
+    case 3:
+      algorithm = 2;
+      algorithmDescrtiption.innerHTML = texts.textsObject.mapping;
+      break;
+    case 2:
+      algorithm = 1;
+      algorithmDescrtiption.innerHTML = texts.textsObject.resterization;
+      break;
+    case 1:
+      algorithm = 0;
+      algorithmDescrtiption.innerHTML = texts.textsObject.raytracing;
+      break;
+  }
+});
+
 document.addEventListener("scroll", () => {
   let scrollY = window.scrollY;
   let windowHeight = window.innerHeight;
   let documentHeight = document.body.scrollHeight;
-  progressBar.style.width = (scrollY / (documentHeight - windowHeight)) * 100 + "%";
+  progressBar.style.width =
+    (scrollY / (documentHeight - windowHeight)) * 100 + "%";
 });
