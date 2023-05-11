@@ -244,7 +244,7 @@ nextArchitecture.addEventListener("click", () => {
     case 0:
       architecture = 1;
       architectureDescription.innerHTML = texts.textsObject.AMDRDNA;
-      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/amdrdna.jpg");
+      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/amdRDNA.jpg");
       break;
     case 1:
       architecture = 2;
@@ -279,7 +279,7 @@ previousArchitecture.addEventListener("click", () => {
     case 2:
       architecture = 1;
       architectureDescription.innerHTML = texts.textsObject.AMDRDNA;
-      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/amdrdna.jpg");
+      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/amdRDNA.jpg");
       break;
     case 1:
       architecture = 0;
