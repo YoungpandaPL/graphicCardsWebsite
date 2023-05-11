@@ -91,14 +91,14 @@ nextProducer.addEventListener("click", () => {
   switch (producer) {
     case 0:
       producer = 1;
-      headquarter1.setAttribute("src", "/src/images/amd-headquarters.jpg");
-      headquarter2.setAttribute("src", "/src/images/amd-headquarters-2.jpg");
+      headquarter1.setAttribute("src", "/graphicCardsWebsite/src/images/amd-headquarters.jpg");
+      headquarter2.setAttribute("src", "/graphicCardsWebsite/src/images/amd-headquarters-2.jpg");
       producerDescription.innerHTML = texts.textsObject.AMD;
       break;
     case 1:
       producer = 2;
-      headquarter1.setAttribute("src", "/src/images/intel-headquarters.jpg");
-      headquarter2.setAttribute("src", "/src/images/intel-headquarters-2.jpg");
+      headquarter1.setAttribute("src", "/graphicCardsWebsite/src/images/intel-headquarters.jpg");
+      headquarter2.setAttribute("src", "/graphicCardsWebsite/src/images/intel-headquarters-2.jpg");
       producerDescription.innerHTML = texts.textsObject.intel;
       break;
   }
@@ -108,14 +108,14 @@ previousProducer.addEventListener("click", () => {
   switch (producer) {
     case 2:
       producer = 1;
-      headquarter1.setAttribute("src", "/src/images/amd-headquarters.jpg");
-      headquarter2.setAttribute("src", "/src/images/amd-headquarters-2.jpg");
+      headquarter1.setAttribute("src", "/graphicCardsWebsite/src/images/amd-headquarters.jpg");
+      headquarter2.setAttribute("src", "/graphicCardsWebsite/src/images/amd-headquarters-2.jpg");
       producerDescription.innerHTML = texts.textsObject.AMD;
       break;
     case 1:
       producer = 0;
-      headquarter1.setAttribute("src", "/src/images/nvidia-headquarters.jpg");
-      headquarter2.setAttribute("src", "/src/images/nvidia-headquarters-2.jpg");
+      headquarter1.setAttribute("src", "/graphicCardsWebsite/src/images/nvidia-headquarters.jpg");
+      headquarter2.setAttribute("src", "/graphicCardsWebsite/src/images/nvidia-headquarters-2.jpg");
       producerDescription.innerHTML = texts.textsObject.nvidia;
       break;
   }
@@ -160,22 +160,22 @@ nextAlgorithm.addEventListener("click", () => {
     case 0:
       algorithm = 1;
       algorithmDescrtiption.innerHTML = texts.textsObject.resterization;
-      algorithmImage.setAttribute("src", "/src/images/resterization.png");
+      algorithmImage.setAttribute("src", "/graphicCardsWebsite/src/images/resterization.png");
       break;
     case 1:
       algorithm = 2;
       algorithmDescrtiption.innerHTML = texts.textsObject.mapping;
-      algorithmImage.setAttribute("src", "/src/images/mapping.jpg");
+      algorithmImage.setAttribute("src", "/graphicCardsWebsite/src/images/mapping.jpg");
       break;
     case 2:
       algorithm = 3;
       algorithmDescrtiption.innerHTML = texts.textsObject.defferedShading;
-      algorithmImage.setAttribute("src", "/src/images/defferedShading.png");
+      algorithmImage.setAttribute("src", "/graphicCardsWebsite/src/images/defferedShading.png");
       break;
     case 3:
       algorithm = 4;
       algorithmDescrtiption.innerHTML = texts.textsObject.antiAliasing;
-      algorithmImage.setAttribute("src", "/src/images/antialiasing.jpg");
+      algorithmImage.setAttribute("src", "/graphicCardsWebsite/src/images/antialiasing.jpg");
       break;
   }
 });
@@ -185,22 +185,22 @@ previousAlgorithm.addEventListener("click", () => {
     case 4:
       algorithm = 3;
       algorithmDescrtiption.innerHTML = texts.textsObject.defferedShading;
-      algorithmImage.setAttribute("src", "/src/images/defferedShading.png");
+      algorithmImage.setAttribute("src", "/graphicCardsWebsite/src/images/defferedShading.png");
       break;
     case 3:
       algorithm = 2;
       algorithmDescrtiption.innerHTML = texts.textsObject.mapping;
-      algorithmImage.setAttribute("src", "/src/images/mapping.jpg");
+      algorithmImage.setAttribute("src", "/graphicCardsWebsite/src/images/mapping.jpg");
       break;
     case 2:
       algorithm = 1;
       algorithmDescrtiption.innerHTML = texts.textsObject.resterization;
-      algorithmImage.setAttribute("src", "/src/images/resterization.png");
+      algorithmImage.setAttribute("src", "/graphicCardsWebsite/src/images/resterization.png");
       break;
     case 1:
       algorithm = 0;
       algorithmDescrtiption.innerHTML = texts.textsObject.raytracing;
-      algorithmImage.setAttribute("src", "/src/images/raytracing.png");
+      algorithmImage.setAttribute("src", "/graphicCardsWebsite/src/images/raytracing.png");
       break;
   }
 });
@@ -244,22 +244,22 @@ nextArchitecture.addEventListener("click", () => {
     case 0:
       architecture = 1;
       architectureDescription.innerHTML = texts.textsObject.AMDRDNA;
-      architectureImage.setAttribute("src", "src/images/amdrdna.jpg");
+      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/amdrdna.jpg");
       break;
     case 1:
       architecture = 2;
       architectureDescription.innerHTML = texts.textsObject.IntelXE;
-      architectureImage.setAttribute("src", "src/images/intelxe.jpg");
+      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/intelxe.jpg");
       break;
     case 2:
       architecture = 3;
       architectureDescription.innerHTML = texts.textsObject.ARMMali;
-      architectureImage.setAttribute("src", "src/images/armmali.jpg");
+      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/armmali.jpg");
       break;
     case 3:
       architecture = 4;
       architectureDescription.innerHTML = texts.textsObject.AppleM1;
-      architectureImage.setAttribute("src", "src/images/applem1.jpg");
+      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/applem1.jpg");
       break;
   }
 });
@@ -269,22 +269,22 @@ previousArchitecture.addEventListener("click", () => {
     case 4:
       architecture = 3;
       architectureDescription.innerHTML = texts.textsObject.ARMMali;
-      architectureImage.setAttribute("src", "src/images/armmali.jpg");
+      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/armmali.jpg");
       break;
     case 3:
       architecture = 2;
       architectureDescription.innerHTML = texts.textsObject.IntelXE;
-      architectureImage.setAttribute("src", "src/images/intelxe.jpg");
+      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/intelxe.jpg");
       break;
     case 2:
       architecture = 1;
       architectureDescription.innerHTML = texts.textsObject.AMDRDNA;
-      architectureImage.setAttribute("src", "src/images/amdrdna.jpg");
+      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/amdrdna.jpg");
       break;
     case 1:
       architecture = 0;
       architectureDescription.innerHTML = texts.textsObject.CUDA;
-      architectureImage.setAttribute("src", "src/images/nvidia-cuda-2.jpg");
+      architectureImage.setAttribute("src", "/graphicCardsWebsite/src/images/nvidia-cuda-2.jpg");
       break;
   }
 });
