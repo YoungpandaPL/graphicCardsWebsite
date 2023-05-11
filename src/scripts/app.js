@@ -20,6 +20,10 @@ let dropdownMenu = document.querySelector(".dropdown ul");
 let dropdownSelected = document.querySelector(".dropdown .selected");
 let dropdownOption = document.querySelectorAll(".dropdown ul li p");
 let parametersDescription = document.querySelector(".parameters .description");
+let nextArchitecture = document.querySelector("#next-architecture");
+let previousArchitecture = document.querySelector("#previous-architecture");
+let architectureDescription = document.querySelector(".architecture .description");
+let architectureImage = document.querySelector(".architecture img");
 
 import * as texts from "./texts.js";
 
@@ -27,6 +31,7 @@ let producer = 0;
 let action = 0;
 let algorithm = 0;
 let usage = 0;
+let architecture = 0;
 
 nextButton.forEach((button) => {
   button.addEventListener("click", () => {
@@ -49,6 +54,7 @@ document.addEventListener("mousemove", (event) => {
 dropdownSelected.addEventListener("click", () => {
   if (dropdownMenu.style.display === "none") {
     dropdownMenu.style.display = "inline";
+    parametersDescription.innerHTML = "";
   } else {
     dropdownMenu.style.display = "none";
   }
@@ -229,6 +235,56 @@ previousUsage.addEventListener("click", () => {
     case 1:
       usage = 0;
       usageDecsription.innerHTML = texts.textsObject.computerGames;
+      break;
+  }
+});
+
+nextArchitecture.addEventListener("click", () => {
+  switch (architecture) {
+    case 0:
+      architecture = 1;
+      architectureDescription.innerHTML = texts.textsObject.AMDRDNA;
+      architectureImage.setAttribute("src", "src/images/amdrdna.jpg");
+      break;
+    case 1:
+      architecture = 2;
+      architectureDescription.innerHTML = texts.textsObject.IntelXE;
+      architectureImage.setAttribute("src", "src/images/intelxe.jpg");
+      break;
+    case 2:
+      architecture = 3;
+      architectureDescription.innerHTML = texts.textsObject.ARMMali;
+      architectureImage.setAttribute("src", "src/images/armmali.jpg");
+      break;
+    case 3:
+      architecture = 4;
+      architectureDescription.innerHTML = texts.textsObject.AppleM1;
+      architectureImage.setAttribute("src", "src/images/applem1.jpg");
+      break;
+  }
+});
+
+previousArchitecture.addEventListener("click", () => {
+  switch (architecture) {
+    case 4:
+      architecture = 3;
+      architectureDescription.innerHTML = texts.textsObject.ARMMali;
+      architectureImage.setAttribute("src", "src/images/armmali.jpg");
+      break;
+    case 3:
+      architecture = 2;
+      architectureDescription.innerHTML = texts.textsObject.IntelXE;
+      architectureImage.setAttribute("src", "src/images/intelxe.jpg");
+      break;
+    case 2:
+      architecture = 1;
+      architectureDescription.innerHTML = texts.textsObject.AMDRDNA;
+      architectureImage.setAttribute("src", "src/images/amdrdna.jpg");
+      break;
+    case 1:
+      architecture = 0;
+      architectureDescription.innerHTML = texts.textsObject.CUDA;
+      architectureImage.setAttribute("src", "src/images/nvidia-cuda-2.jpg");
       break;
   }
 });

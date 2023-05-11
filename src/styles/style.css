@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  cursor: none;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
@@ -39,6 +39,10 @@ header {
   padding: 150px;
 }
 
+header h1 {
+  font-size: 170px;
+}
+
 h1 {
   color: white;
 }
@@ -60,6 +64,13 @@ header .content {
   align-items: center;
 }
 
+header .content #next {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%);
+}
+
 header .content button,
 .definition button,
 .graphic-card-build button,
@@ -71,7 +82,7 @@ header .content button,
 .integrated button,
 .parameters button,
 .architecture .buttons button {
-  padding: 20px 10px;
+  padding: 15px 10px;
   width: 300px;
   font-size: 30px;
   background-color: transparent;
@@ -81,7 +92,7 @@ header .content button,
   position: relative;
   overflow: hidden;
   z-index: 1;
-  margin-top: 25px;
+  margin-top: 20px;
   transition: box-shadow 0.5s, background-color 0.5s, text-shadow 0.5s;
 }
 
@@ -151,7 +162,8 @@ header img:hover {
 }
 
 .definition h2 {
-  color: rgb(0, 136, 255);
+  color: white;
+  font-size: 100px;
   width: 60%;
 }
 
@@ -184,6 +196,7 @@ header img:hover {
   background-color: rgb(20, 20, 20);
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .graphic-card-build .title {
@@ -324,6 +337,12 @@ header img:hover {
   flex-direction: row;
   padding: 100px;
   justify-content: space-between;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.algorithm .title {
+  margin-bottom: 30px;
 }
 
 .algorithm .content {
@@ -359,6 +378,12 @@ header img:hover {
   align-items: center;
   position: relative;
   padding: 100px;
+  overflow: hidden;
+}
+
+.usage .title {
+  font-size: 120px;
+  text-align: center;
 }
 
 .usage .content {
@@ -395,6 +420,7 @@ header img:hover {
   padding: 100px;
   align-items: center;
   gap: 50px;
+  overflow: hidden;
 }
 
 .parameters .content {
@@ -460,6 +486,16 @@ header img:hover {
   background-color: rgb(20, 20, 20);
   padding: 100px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  overflow: hidden;
+}
+
+.architecture img {
+  width: 900px;
+  height: 600px;
+  object-fit: cover;
 }
 
 .architecture .buttons {
@@ -477,10 +513,11 @@ header img:hover {
 
 .architecture .description {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .architecture .title {
   font-size: 80px;
   color: white;
+  width: 1200px;
 }

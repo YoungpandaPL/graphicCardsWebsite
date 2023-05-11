@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="/src/styles/style.css" type="text/css" />
     <link rel="stylesheet" href="src/styles/animations.css" type="text/css" />
     <link rel="stylesheet" href="src/styles/build.css" type="text/css" />
+    <link rel="stylesheet" href="src/styles/responsive.css" type="text/css" />
     <script src="https://kit.fontawesome.com/aecae4bf2b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
     <i class="fa-sharp fa-solid fa-fan cursor"></i>
     <header>
-      <h1 style="font-size: 170px">Trochę o <span>kartach graficznych</span></h1>
+      <h1>Trochę o <span>kartach graficznych</span></h1>
       <div class="content">
         <h2 style="font-size: 50px; color: white" class="subtitle">
           Strona internetowa przygotowana przez <span id="author"></span>
@@ -25,7 +26,7 @@
     </header>
     <main>
       <section class="definition">
-        <h2 id="definition-title" style="color: white; font-size: 100px"></h2>
+        <h2 id="definition-title"></h2>
         <p id="definiton-description"></p>
         <img src="src/images/graphic-card-1.png" id="definition-image" alt="graphic-card" />
         <button id="next">Przejdź dalej</button>
@@ -55,8 +56,8 @@
             przeznaczone do zastosowań profesjonalnych, takich jak projektowanie 3D i animacja.
           </p>
           <div class="buttons">
-            <button class="next-producer" style="height: 100px; width: 400px">Następny producent</button>
-            <button class="previous-producer" style="height: 100px; width: 400px">Poprzedni producent</button>
+            <button class="next-producer">Następny producent</button>
+            <button class="previous-producer">Poprzedni producent</button>
             <button class="next" id="next">Przejdź dalej</button>
           </div>
         </div>
@@ -81,12 +82,7 @@
           </div>
         </div>
         <img class="background" src="src/images/background-2.jpg" alt="background" />
-        <img
-          class="action-graphic-card"
-          src="src/images/graphic-card-1.png"
-          class="action-graphic-card"
-          alt="graphic-card"
-        />
+        <img class="action-graphic-card" src="src/images/graphic-card-1.png" alt="graphic-card" />
       </section>
       <section class="algorithm">
         <div class="content">
@@ -106,7 +102,7 @@
       </section>
       <section class="usage">
         <div class="content">
-          <h2 class="title" style="font-size: 120px; text-align: center"></h2>
+          <h2 class="title">Wykorzystanie kart graficznych</h2>
           <p class="description">
             <span>Gry komputerowe: </span>Karty graficzne są niezbędne do wyświetlania grafiki w grach komputerowych.
             Dzięki nim możemy cieszyć się realistycznymi obrazami, płynnymi animacjami i efektami wizualnymi.
@@ -120,7 +116,7 @@
       </section>
       <section class="parameters">
         <div class="content">
-          <h2 class="title"></h2>
+          <h2 class="title">Parametry kart graficznych</h2>
           <div class="dropdown">
             <span class="selected">Rdzenie</span>
             <ul>
@@ -138,7 +134,7 @@
       </section>
       <section class="architecture">
         <div class="content">
-          <h2 class="title"></h2>
+          <h2 class="title">Architektury kart graficznych</h2>
           <p class="description">
             <span>CUDA: </span>to architektura kart graficznych firmy Nvidia, która jest wykorzystywana w kartach
             graficznych przeznaczonych do zastosowań naukowych i obliczeń równoległych. Architektura ta została
@@ -149,15 +145,15 @@
           <div class="buttons">
             <button id="previous-architecture">Poprzedni</button>
             <button id="next-architecture">Następny</button>
-            <button id="next">Przejdź dalej</button>
           </div>
         </div>
+        <img src="src/images/nvidia-cuda-2.jpg" />
       </section>
     </main>
     <div id="progress-bar"></div>
+    <script src="src/scripts/parralaxEffects.js" type="module"></script>
     <script src="src/scripts/texts.js" type="module"></script>
     <script src="src/scripts/typingEfffect.js"></script>
-    <script src="src/scripts/parralaxEffects.js" type="module"></script>
     <script src="src/scripts/app.js" type="module"></script>
   </body>
 </html>

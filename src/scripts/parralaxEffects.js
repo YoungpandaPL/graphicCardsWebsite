@@ -35,14 +35,5 @@ document.addEventListener("scroll", () => {
   if (scrollY >= 5260) {
     typingEffect(algorithmTitle, "Trochę o algorytmach kart graficznych", 50, 0);
   }
-  if (scrollY >= 6750) {
-    typingEffect(usageTitle, "Wykorzystanie kart graficznych", 50, 0);
-  }
-  if (scrollY >= 8255) {
-    typingEffect(parametersTitle, "Parametry kart graficznych", 50, 0);
-  }
-  if (scrollY >= 9400) {
-    typingEffect(architectureTitle, "Architektury kart graficznych", 50, 0);
-  }
   console.log(scrollY);
 });
