@@ -35,5 +35,4 @@ document.addEventListener("scroll", () => {
   if (scrollY >= 5260) {
     typingEffect(algorithmTitle, "Trochę o algorytmach kart graficznych", 50, 0);
   }
-  console.log(scrollY);
 });
